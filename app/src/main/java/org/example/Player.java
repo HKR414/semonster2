@@ -19,10 +19,12 @@ public class Player {
   }
 
   void MakeDeck() {
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < 10; i++) {
       Monster m = new Monster();
       this.Deck[i] = m;
-      n++;
+      if (n < 8) {
+        n++;
+      }
     }
   }
 
@@ -37,7 +39,7 @@ public class Player {
   @Override
   public String toString() {
     String result = "Deck:" + this.name + " HP:" + this.hp + "\n";
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < n; i++) {
       result = result + this.Deck[i].name + ":レア度[" + this.Deck[i].rare + "]\n";
     }
 
