@@ -27,7 +27,7 @@ public class Player {
   }
 
   public void drawMonsters() {
-    for (int i = n + 1; i < 10; n++) {
+    for (int i = n; i < 10; n++) {
       Monster m = new Monster();
       this.Deck[i] = m;
       n++;
