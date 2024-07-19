@@ -5,7 +5,7 @@ public class Player {
   Monster[] Deck = new Monster[10];
   int hp = 10;
   int n = 0;
-
+  
   Player() {
     this.name = "user";
     MakeDeck();
@@ -31,7 +31,7 @@ public class Player {
       Monster m = new Monster();
       this.Deck[i] = m;
       n++;
-    }
+
   }
 
   @Override
